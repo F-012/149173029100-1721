@@ -45,7 +45,6 @@ const equalSign = document.querySelector('.equal-sign')
 
 equalSign.addEventListener('click', () => {
     calculate()
-    updateScreen(currentNumber)
 })
 
 const calculate = () => {
@@ -71,6 +70,7 @@ const calculate = () => {
             break
     }
     currentNumber = result
+    updateScreen(currentNumber)
     calculationOperator= ''
 }
 
