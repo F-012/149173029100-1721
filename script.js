@@ -63,6 +63,10 @@ const calculate = () => {
         case "/":
             result = parseFloat(prevNumber) / parseFloat(currentNumber)
             break
+        //penambahan fitur modulo(sisa bagi)
+        case "%":
+            result = parseFloat(prevNumber) % parseFloat(currentNumber)
+            break
         default:
             break
     }
